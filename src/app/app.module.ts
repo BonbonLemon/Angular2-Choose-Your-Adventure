@@ -6,6 +6,7 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 
 import { AdventureComponent } from './adventures/adventure.component';
+import { AdventureListComponent } from './adventures/adventure-list.component';
 
 import { AdventureService } from './adventures/adventure.service';
 
@@ -15,7 +16,8 @@ import { AdventureRoutingModule } from './adventures/adventure-routing.module';
 @NgModule({
   declarations: [
     AppComponent,
-    AdventureComponent
+    AdventureComponent,
+    AdventureListComponent
   ],
   imports: [
     BrowserModule,

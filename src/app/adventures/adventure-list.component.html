@@ -1,0 +1,20 @@
+<!-- <h2>Adventures List</h2> -->
+<div class="container-fluid">
+  <ul class="row">
+    <li class="col-lg-4 col-sm-6 col-xs-12" *ngFor="let adventure of adventures">
+      <div class="adventure" (click)="goToDetail(adventure.id)">
+        <div class="adventure-image">
+          <img src="{{adventure.imgUrl}}" />
+        </div>
+        <div class="adventure-description">
+          <div class="adventure-author">
+            {{adventure.author}}
+          </div>
+          <div class="adventure-title">
+            {{adventure.title}}
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>

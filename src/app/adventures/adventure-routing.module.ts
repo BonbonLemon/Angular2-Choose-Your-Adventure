@@ -1,8 +1,8 @@
 import { NgModule }     from '@angular/core';
 import { RouterModule } from '@angular/router';
 
-// import { AdventureListComponent } from './adventure-list.component';
 import { AdventureComponent } from './adventure.component';
+import { AdventureListComponent } from './adventure-list.component';
 // import { AdventureDetailComponent } from './detail/adventure-detail.component';
 
 @NgModule({
@@ -14,16 +14,16 @@ import { AdventureComponent } from './adventure.component';
         pathMatch: 'full'
       },
       {
-        path: 'adventures',
+        path: '',
         component: AdventureComponent,
         children: [
+          {
+            path: 'adventures',
+            component: AdventureListComponent
+          },
           // {
           //   path: '',
           //   component: AdventureDetailComponent
-          // },
-          // {
-          //   path: 'adventures',
-          //   component: AdventureListComponent
           // }
         ]
       }
