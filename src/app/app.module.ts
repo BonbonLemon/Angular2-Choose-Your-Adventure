@@ -5,14 +5,22 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 
+import { AdventureComponent } from './adventures/adventure.component';
+
+import { AppRoutingModule } from './app-routing.module';
+import { AdventureRoutingModule } from './adventures/adventure-routing.module';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AdventureComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    AppRoutingModule,
+    AdventureRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
