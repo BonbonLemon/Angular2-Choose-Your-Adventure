@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 
 import { AdventureComponent } from './adventures/adventure.component';
 import { AdventureListComponent } from './adventures/adventure-list.component';
+import { AdventureDetailComponent } from './adventures/detail/adventure-detail.component';
 
 import { AdventureService } from './adventures/adventure.service';
 
@@ -17,7 +18,8 @@ import { AdventureRoutingModule } from './adventures/adventure-routing.module';
   declarations: [
     AppComponent,
     AdventureComponent,
-    AdventureListComponent
+    AdventureListComponent,
+    AdventureDetailComponent
   ],
   imports: [
     BrowserModule,

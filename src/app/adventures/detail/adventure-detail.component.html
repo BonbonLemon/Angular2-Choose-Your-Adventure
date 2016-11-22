@@ -1,0 +1,39 @@
+<div class="container-fluid">
+  <div class="row back-button">
+    <a (click)="list()">
+      <span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span>
+      Back to list
+    </a>
+  </div>
+
+  <div class="adventure-box row" *ngIf="adventure">
+    <div class="col-sm-7 col-xs-12">
+      <div class="container-fluid">
+        <div class="adventure-details" *ngIf="!page">
+          <h2 class="row adventure-title">{{adventure.title}}</h2>
+          <span class="row">By {{adventure.author}}</span>
+          <button class="row start-button" type="button" (click)="start()">Start</button>
+        </div>
+
+        <div *ngIf="page">
+          <div class="page-text">
+            <h3>{{adventure.pages[page - 1].text}}</h3>
+            <ul *ngIf="adventure.pages[page - 1].options.length">
+              <li class="option" *ngFor='let option of adventure.pages[page - 1].options' (click)="selectOption(option.turnTo)">{{option.action}}</li>
+            </ul>
+            <h4 class="the-end" *ngIf="!adventure.pages[page - 1].options.length">The End</h4>
+          </div>
+          <div class="left-buttons">
+            <button class="btn btn-info" *ngIf="page != 1" type="button" (click)="back()">Back</button>
+            <button class="btn btn-info" *ngIf="!adventure.pages[page - 1].options.length" type="button" (click)="start()">Try Again</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="adventure-image col-sm-5 col-xs-0">
+      <img src="{{adventure.imgUrl}}"/>
+    </div>
+  </div>
+
+</div>

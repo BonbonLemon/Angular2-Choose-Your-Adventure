@@ -1,0 +1,83 @@
+a {
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.back-button {
+  margin: 20px 0;
+}
+
+.adventure-box {
+  outline: thin solid black;
+  background-color: white;
+  height: 450px;
+}
+
+.adventure-box-left {
+}
+
+.adventure-details {
+  text-align: center;
+}
+
+.adventure-title {
+  margin-top: 80px;
+}
+
+.start-button {
+  margin-top: 100px;
+}
+
+.page-text {
+  font-family: serif;
+  height: 375px;
+}
+
+h3 {
+  font-size: 24px;
+  padding-bottom: 20px;
+  border-bottom: thin solid black;
+  white-space: pre-wrap;
+}
+
+.option {
+  padding-left: 20px;
+  font-size: 18px;
+}
+
+.option:hover {
+  cursor: pointer;
+  background-color: #e9ebf0;
+}
+
+.option:active {
+  background-color: #ced1d8;
+}
+
+.the-end {
+  text-align: center;
+  font-family: fantasy;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.left-buttons {
+
+}
+
+.adventure-image {
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}

@@ -3,7 +3,7 @@ import { RouterModule } from '@angular/router';
 
 import { AdventureComponent } from './adventure.component';
 import { AdventureListComponent } from './adventure-list.component';
-// import { AdventureDetailComponent } from './detail/adventure-detail.component';
+import { AdventureDetailComponent } from './detail/adventure-detail.component';
 
 @NgModule({
   imports: [
@@ -21,10 +21,10 @@ import { AdventureListComponent } from './adventure-list.component';
             path: 'adventures',
             component: AdventureListComponent
           },
-          // {
-          //   path: '',
-          //   component: AdventureDetailComponent
-          // }
+          {
+            path: 'adventure/:id',
+            component: AdventureDetailComponent
+          }
         ]
       }
     ])
