@@ -1,6 +1,6 @@
 import { ChooseYourAdventurePage } from './app.po';
 
-describe('choose-your-adventure App', function() {
+describe('Angular2-Choose-Your-Adventure App', function() {
   let page: ChooseYourAdventurePage;
 
   beforeEach(() => {
