@@ -1,4 +1,4 @@
-# ChooseYourAdventure
+# Choose Your Adventure
 
 ![Alt text](/preview.png?raw=true)
 
@@ -6,9 +6,8 @@
 
 ## Features
 - Branch new Angular 2.0 Final support
-- Service to keep Components and Views from getting data
-- Router manages all components and their children components
-- Buttons allow for easy page navigation
+- Data Services to keep Components lean and focused on the View
+- Router allows for easy navigation between components and their children
 
 ## Quickstart
 
