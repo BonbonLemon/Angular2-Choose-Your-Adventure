@@ -1,5 +1,24 @@
 # ChooseYourAdventure
 
+![Alt text](/preview.png?raw=true)
+
+[Choose-Your-Adventure][link] is a front-end app powered by Angular2. Users may select an adventure and decide what direction they would like the story to go, similar to the Choose Your Adventure books one may have grown up with.
+
+## Features
+- Branch new Angular 2.0 Final support
+- Service to keep Components and Views from getting data
+- Router manages all components and their children components
+- Buttons allow for easy page navigation
+
+## Quickstart
+
+```sh
+$ git clone https://github.com/BonbonLemon/Angular2-Choose-Your-Adventure
+$ cd Angular2-Choose-Your-Adventure
+$ npm install
+$ ng serve
+```
+
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.20-4.
 
 ## Development server
@@ -29,3 +48,5 @@ Run `ng github-pages:deploy` to deploy to Github Pages.
 ## Further help
 
 To get more help on the `angular-cli` use `ng --help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+[link]: http://bonbonlemon.github.io/Angular2-Choose-Your-Adventure
